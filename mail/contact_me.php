@@ -21,11 +21,13 @@ $email_body = "You have received a new message from your website contact form.\n
 $headers = "From: $email_address\n"; // Email will appear to come from the user's email address
 $headers .= "Reply-To: $email_address"; // Replies will go to the user's email address
 
+// Send email and check for errors
 if(mail($recipient_email, $email_subject, $email_body, $headers)) {
     echo "Message sent successfully!";
     return true;
 } else {
     echo "Message sending failed!";
+    error_log("Mail function failed: " . print_r(error_get_last(), true));
     return false;
 }
 ?>
