@@ -895,88 +895,124 @@ xclip
 
 
 
-
-/* problem-section */
-
 .problem-statement-area {
-  padding: 100px 0;
-  background-color: #f9f9f9;
-}
-
-.section-title {
-  text-align: center;
-  margin-bottom: 50px;
-}
-
-.section-title h2 {
-  font-size: 2.5em;
-  font-weight: bold;
-  color: #000;
-  margin-bottom: 10px;
-}
-
-.section-title p {
-  font-size: 1.2em;
-  color: #666;
-}
-
-.problem-section {
-  background-color: #fff;
-  padding: 30px;
-  border-radius: 15px; /* Increase border-radius for a more rounded look */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  margin-bottom: 30px;
-  height: 100%; /* Increase the height of the cards */
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between; /* Ensure content is evenly distributed */
-  overflow: hidden; /* Hide any content that exceeds the card boundaries */
-}
-
-.problem-section h3 {
+    padding: 100px 0;
+    background-color: #f9f9f9;
+  }
+  
+  .section-title {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  
+  .section-title h2 {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 10px;
+  }
+  
+  .section-title p {
+    font-size: 1.2em;
+    color: #666;
+  }
+  
+  .problem-section {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-bottom: 30px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+    transition: transform 0.8s, opacity 0.8s;
+  }
+  
+  .problem-section h3 {
     font-size: 22px;
     font-weight: 600;
     margin-bottom: 10px;
     color: #28a9e2;
-}
-
-
-.problem-section p {
-  font-size: 1.2em;
-  color: #666;
-  flex: 1; /* Allow the text to grow within the available space */
-}
-
-.problem-section ul {
-  text-align: left;
-  margin-bottom: 20px;
-}
-
-.problem-section ul li {
-  list-style-type: disc;
-  margin-left: 20px;
-  font-size: 1.2em;
-  color: #666;
-}
-
-.problem-section {
-    margin: 10px;
-}
-
-.problem-section img {
-  max-width: 100%;
-  max-height: 70%; /* Reduce max-height to leave more space for the text */
-  object-fit: cover; /* Ensure the image covers the entire space */
-  border-radius: 15px; /* Match the border-radius of the card */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  margin-top: 0px;
-}
-
-.section-title {
+  }
+  
+  .problem-section p {
+    font-size: 1.2em;
+    color: #666;
+    flex: 1;
+  }
+  
+  .problem-section ul {
+    text-align: left;
+    margin-bottom: 20px;
+  }
+  
+  .problem-section ul li {
+    list-style-type: disc;
+    margin-left: 20px;
+    font-size: 1.2em;
+    color: #666;
+  }
+  
+  .problem-section img {
+    max-width: 100%;
+    max-height: 70%;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 0px;
+    transition: transform 0.8s, opacity 0.8s;
+  }
+  
+  .problem-section img:hover {
+    transform: scale(1.1);
+    opacity: 0.8;
+  }
+  
+  .section-title {
     font-size: 16px;
-}
-
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .problem-section {
+      padding: 20px;
+    }
+  
+    .problem-section h3 {
+      font-size: 20px;
+    }
+  
+    .problem-section p {
+      font-size: 1em;
+    }
+  
+    .section-title h2 {
+      font-size: 2em;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .problem-section {
+      padding: 15px;
+    }
+  
+    .problem-section h3 {
+      font-size: 18px;
+    }
+  
+    .problem-section p {
+      font-size: 0.9em;
+    }
+  
+    .section-title h2 {
+      font-size: 1.8em;
+    }
+  }
+  
 
 
 
