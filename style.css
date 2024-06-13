@@ -1119,20 +1119,35 @@ xclip
     padding: 40px;
     box-shadow: 10px 10px 15px rgba(73, 78, 92, 0.1);
     background: rgb(242, 243, 245);
-    transition: 0.4s;
+    transition: all 0.3s ease-in-out;
     height: 100%;
     margin-bottom: 30px;
+    border-radius: 50px 50px 0px 50px;
+    position: relative;
+    z-index: 1;
 }
 
 #why-choose-us .row {
     row-gap: 30px; /* Add row gap to separate rows */
 }
 
-#why-choose-us .box:hover {
-    box-shadow: 0px 0px 30px rgba(73, 78, 92, 0.15);
-    transform: translateY(-10px);
-    -webkit-transform: translateY(-10px);
-    -moz-transform: translateY(-10px);
+#why-choose-us .box::after {
+    background: #28a9e2;
+    width: 0px;
+    height: 0px;
+    content: "";
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    border-radius: 50px 50px 0px 50px;
+    transition: all 0.3s ease-in-out;
+    z-index: -1;
+}
+
+#why-choose-us .box:hover::after {
+    width: 100%;
+    height: 100%;
+    transition: all 0.3s ease-in-out;
 }
 
 #why-choose-us .box .icon {
@@ -1140,13 +1155,10 @@ xclip
     height: 64px;
     width: 64px;
     margin-right: 20px; /* Add space between icon and text */
-}
-
-#why-choose-us .box .icon img {
-    width: 100%;
-    height: auto;
-    transition: 0.5s;
-    display: block; /* Ensure the image is a block element */
+    z-index: 2; /* Ensure icon is above the background */
+    transition: color 0.3s ease-in-out;
+    font-size: 64px; /* Size of the icons */
+    color: #28a9e2; /* Color of the icons */
 }
 
 #why-choose-us .box h4 {
@@ -1155,6 +1167,9 @@ xclip
     font-size: 22px;
     font-weight: 600;
     color: #28a9e2;
+    position: relative;
+    z-index: 2; /* Ensure text is above the background */
+    transition: color 0.3s ease-in-out;
 }
 
 #why-choose-us .box h4 a {
@@ -1171,6 +1186,21 @@ xclip
     margin-left: 84px;
     margin-bottom: 0;
     line-height: 26px;
+    position: relative;
+    z-index: 2; /* Ensure paragraph is above the background */
+    transition: color 0.3s ease-in-out;
+}
+
+#why-choose-us .box:hover .icon {
+    color: #ffffff; /* Change icon color to white on hover */
+}
+
+#why-choose-us .box:hover h4 {
+    color: #ffffff;
+}
+
+#why-choose-us .box:hover p {
+    color: #ffffff;
 }
 
 @media (max-width: 767px) {
@@ -1188,6 +1218,7 @@ xclip
         text-align: center;
     }
 }
+
 
   
 /*------------------------------------------------------------------
