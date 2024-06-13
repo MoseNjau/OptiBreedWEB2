@@ -1209,8 +1209,11 @@ xclip
         text-align: center; /* Center the text for small screens */
     }
     #why-choose-us .box .icon {
-        float: none;
-        margin: 0 auto 15px auto; /* Center the icon and add space below it */
+        margin: 0 auto 15px auto; /* Center the icon horizontally and add space below it */
+        display: flex; /* Use flexbox for centering vertically */
+        justify-content: center; /* Center horizontally */
+        align-items: center; /* Center vertically */
+        height: 64px; /* Set a fixed height to align the icons */
     }
     #why-choose-us .box h4,
     #why-choose-us .box p {
@@ -1218,6 +1221,7 @@ xclip
         text-align: center;
     }
 }
+
 
 
   
@@ -1258,8 +1262,8 @@ xclip
 }
 
 #partners .partner-logo {
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
     overflow: hidden;
     transition: all 0.3s ease;
 }
