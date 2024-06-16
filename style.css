@@ -1264,6 +1264,85 @@ xclip
 
 
 
+/*------------------------------------------------------------------
+    Our Team
+-------------------------------------------------------------------*/
+#team {
+    padding-bottom: 10px;
+}
+.our-team {
+    text-align: center;
+    padding-bottom: 30px;
+}
+.our-team .pic {
+    position: relative;
+    width: 150px; /* Set a fixed width */
+    height: 150px; /* Set a fixed height */
+    margin: 0 auto; /* Center the image container */
+    border-top: none;
+    border-bottom: 5px solid #28a9e2;
+    border-radius: 50% 50% 0 50%;
+    overflow: hidden;
+    transition: all 0.5s ease 0s;
+}
+.our-team:hover .pic {
+    border-bottom-color: #1c142b;
+    border-radius: 0 50%;
+}
+.our-team .pic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the image covers the container */
+    transition: all 0.5s ease 0s;
+}
+.our-team .team-content {
+    padding: 20px 0;
+}
+.our-team .title {
+    font-size: 22px;
+    font-weight: 700;
+    color: #28a9e2;
+    text-transform: uppercase;
+    margin: 0 0 5px 0;
+}
+.our-team .post {
+    display: block;
+    font-size: 17px;
+    color: #878484;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+}
+.our-team .social {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.our-team .social li {
+    display: inline-block;
+}
+.our-team .social li a {
+    display: block;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    border-radius: 50%;
+    border: 1px solid #28a9e2;
+    background: #fff;
+    font-size: 17px;
+    color: #28a9e2;
+    text-align: center;
+    transition: all 0.5s ease 0s;
+}
+.our-team:hover .social li a {
+    background: #1c142b;
+    color: #fff;
+}
+@media only screen and (max-width: 990px) {
+    .our-team {
+        margin-bottom: 30px;
+    }
+}
+
   
 /*------------------------------------------------------------------
     Our Partners
@@ -1701,84 +1780,6 @@ hr.invis1 {
 .post-info ul li{
 	display: inline-block;
 	text-align: center;
-}
-
-
-/*------------------------------------------------------------------
-    Our Team
--------------------------------------------------------------------*/
-
-.our-team {
-    text-align: center;
-    padding-bottom: 20px;
-}
-.our-team .pic {
-    position: relative;
-    width: 150px; /* Set a fixed width */
-    height: 150px; /* Set a fixed height */
-    margin: 0 auto; /* Center the image container */
-    border-top: none;
-    border-bottom: 5px solid #28a9e2;
-    border-radius: 50% 50% 0 50%;
-    overflow: hidden;
-    transition: all 0.5s ease 0s;
-}
-.our-team:hover .pic {
-    border-bottom-color: #1c142b;
-    border-radius: 0 50%;
-}
-.our-team .pic img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* Ensure the image covers the container */
-    transition: all 0.5s ease 0s;
-}
-.our-team .team-content {
-    padding: 20px 0;
-}
-.our-team .title {
-    font-size: 22px;
-    font-weight: 700;
-    color: #28a9e2;
-    text-transform: uppercase;
-    margin: 0 0 5px 0;
-}
-.our-team .post {
-    display: block;
-    font-size: 17px;
-    color: #878484;
-    text-transform: capitalize;
-    margin-bottom: 10px;
-}
-.our-team .social {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-.our-team .social li {
-    display: inline-block;
-}
-.our-team .social li a {
-    display: block;
-    width: 35px;
-    height: 35px;
-    line-height: 35px;
-    border-radius: 50%;
-    border: 1px solid #28a9e2;
-    background: #fff;
-    font-size: 17px;
-    color: #28a9e2;
-    text-align: center;
-    transition: all 0.5s ease 0s;
-}
-.our-team:hover .social li a {
-    background: #1c142b;
-    color: #fff;
-}
-@media only screen and (max-width: 990px) {
-    .our-team {
-        margin-bottom: 30px;
-    }
 }
 
 
