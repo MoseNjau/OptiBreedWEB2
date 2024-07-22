@@ -1085,12 +1085,16 @@ xclip
     overflow: hidden;
     border-radius: 10px;
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    background-color: transparent;
 }
 
 .service-image img {
     width: 100%;
     height: auto;
     transition: transform 0.3s ease-in-out;
+    object-fit: cover;
+    object-position: center;
+    background-color: transparent;
 }
 
 .service-image:hover {
